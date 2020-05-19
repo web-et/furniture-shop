@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">Закрыть</button>
+
+            <h1 class="modal-title">Sign Up</h1>
+
+            <form class="modal-form" action="/form.php">
+                <label class="modal-label" for="login">Login</label>
+                <input id="login" class="modal-input" type="email" name="login" placeholder="Email">
+
+                <label class="modal-label" for="password">Password</label>
+                <input id="password" class="modal-input" type="password" name="password" placeholder="Password">
+
+                <button class="modal-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="header-nav">
             <div class="header-nav-wrapper">
