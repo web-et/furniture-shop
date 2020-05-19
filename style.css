@@ -1,11 +1,19 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: #707070;
+    --gray-light: #F9F9F9;
+    --font-secondary: "Crimson Text", serif;
+}
+
 body {
     margin: 0;
     padding: 0 59px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
-    color: #000;
-    border-bottom: 35px solid #000;
+    color: var(--black);
+    border-bottom: 35px solid var(--black);
 }
 
 .main {
@@ -56,7 +64,7 @@ body {
     font-size: 22px;
     font-style: italic;
     text-decoration: none;
-    color: #000;
+    color: var(--black);
     font-family: 'Crimson Text', serif;
 }
 
@@ -80,7 +88,7 @@ body {
 
 .nav-list-link {
     font-size: 18px;
-    color: #000;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -93,7 +101,7 @@ body {
     font-size: 22px;
     font-style: italic;
     font-weight: 400;
-    font-family: "Crimson Text", serif;
+    font-family: var(--font-secondary);
 }
 
 .about-title {
@@ -142,8 +150,8 @@ body {
     display: block;
     margin-top: 12px;
     font-size: 22px;
-    color: #707070;
-    font-family: "Crimson Text", serif;
+    color: var(--gray);
+    font-family: var(--font-secondary);
     font-weight: 400;
 }
 
@@ -170,7 +178,7 @@ body {
 .team-item-email {
     font-size: 16px;
     font-weight: bold;
-    color: #000;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -188,7 +196,7 @@ body {
 
 .footer {
     padding-top: 68px;
-    border-top: 2px solid #000;
+    border-top: 2px solid var(--black);
 }
 
 .footer-title {
@@ -214,7 +222,7 @@ body {
 .footer-contacts-item-title {
     font-size: 16px;
     font-weight: bold;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--black);
 }
 
 .footer-contacts-item-subtitle {
@@ -225,7 +233,7 @@ body {
 
 .footer-contacts-item-text {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
 .footer-address {
