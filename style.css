@@ -100,8 +100,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .nav-list-item {
     margin-bottom: 8px;
+}
+
+.nav-list-hidden {
+    display: none;
 }
 
 .nav-list-link {
