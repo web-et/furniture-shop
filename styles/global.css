@@ -1,0 +1,27 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: #707070;
+    --gray-light: #F9F9F9;
+    --font-secondary: "Crimson Text", serif;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 20px solid var(--black);
+    color: var(--black);
+}
+
+@media (min-width: 1000px) {
+    body {
+        padding: 0 59px;
+        font-size: 18px;
+        line-height: 21px;
+        border-bottom-width: 35px;
+    }
+}
