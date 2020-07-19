@@ -1,28 +1,6 @@
-:root {
-    --black: #000;
-    --white: #fff;
-    --gray: #707070;
-    --gray-light: #F9F9F9;
-    --font-secondary: "Crimson Text", serif;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 20px solid var(--black);
-    color: var(--black);
-}
-
-.title {
-    margin: 0;
-    font-size: 22px;
-    line-height: 1.4;
-    font-weight: 500;
-}
+@import './styles/global.css';
+@import './styles/modal.css';
+@import './styles/title.css';
 
 .header {
     display: flex;
@@ -101,12 +79,12 @@ body {
     padding: 0;
 }
 
-.nav-list-item {
-    margin-bottom: 8px;
-}
-
 .nav-list-hidden {
     display: none;
+}
+
+.nav-list-item {
+    margin-bottom: 8px;
 }
 
 .nav-list-link {
@@ -273,84 +251,6 @@ body {
     font-style: normal;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.modal-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    opacity: 0.8;
-    z-index: 0;
-}
-
-.modal-content {
-    position: relative;
-    padding-top: 60px;
-    color: #000;
-    background-color: #fff;
-    width: 687px;
-    z-index: 1;
-}
-
-.modal-close {
-    position: absolute;
-    right: 0;
-    bottom: 100%;
-    background: none;
-    border: none;
-    font-size: 0;
-    width: 50px;
-    height: 74px;
-    background-image: url(./images/cross-icon.svg);
-    background-repeat: no-repeat;
-}
-
-.modal-title {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 46px;
-}
-
-.modal-form {
-    padding: 30px;
-}
-
-.modal-input,
-.modal-button {
-    margin-bottom: 30px;
-    border: 3px solid black;
-    display: block;
-    width: 100%;
-    padding: 23px 30px 24px 34px;
-    font-size: 26px;
-    box-sizing: border-box;
-}
-
-.modal-button {
-    background-color: #FFD643;
-}
-
-.modal-label {
-    display: block;
-    font-size: 26px;
-    padding-bottom: 15px;
-}
 .text-italic {
     margin: 0;
     font-size: 22px;
@@ -540,18 +440,6 @@ body {
 }
 
 @media (min-width: 1000px) {
-    body {
-        padding: 0 59px;
-        font-size: 18px;
-        line-height: 21px;
-        border-bottom-width: 35px;
-    }
-
-    .title {
-        font-size: 52px;
-        line-height: 62px;
-    }
-
     .header {
         margin-bottom: 102px;
     }
