@@ -13,7 +13,7 @@ burgerElement.addEventListener('click', () => {
 
 // Отправка формы на сервер
 // 1. Найти элемент формы
-let form = document.querySelector('.modal-form');
+let form = document.querySelector('.modal__form');
 
 // 2. Подписаться на событие отправки
 form.addEventListener('submit', (event) => {

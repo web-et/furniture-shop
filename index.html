@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="modal">
+    <div class="modal" role="dialog" aria-label="Sign Up Modal">
         <div class="modal__overlay"></div>
         <div class="modal__content">
-            <button class="modal__close">Закрыть</button>
+            <button class="modal__close">Close button</button>
 
             <h1 class="modal__title">Sign Up</h1>
 
@@ -44,7 +44,7 @@
             </div>
 
             <ul class="nav-list nav-list-right">
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Sign in</a></li>
+                <li class="nav-list-item"><button class="nav-list-link nav-list-button js-sign-modal">Sign in</button></li>
                 <li class="nav-list-item"><a href="#" class="nav-list-link">Cart</a></li>
                 <li class="nav-list-item"><a href="#" class="nav-list-link">Search</a></li>
             </ul>
@@ -193,6 +193,7 @@
         </section>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
