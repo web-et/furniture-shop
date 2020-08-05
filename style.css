@@ -6,20 +6,6 @@
 @import './styles/shop-goods.css';
 @import './styles/dropdown.css';
 
-
-
-.nav-list-button {
-    background: 0;
-    border: 0;
-    padding: 0;
-    font-family: inherit;
-}
-
-
-
-
-
-
 .header {
     display: flex;
     margin-top: 22px;
@@ -101,6 +87,13 @@
     display: none;
 }
 
+.nav-list-button {
+    background: 0;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
 .nav-list-item {
     margin-bottom: 8px;
 }
@@ -113,7 +106,7 @@
 
 .promo-image {
     width: auto;
-    height: 70vh;
+    height: 40vh;
 }
 
 .about-blockquote {
