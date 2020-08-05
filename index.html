@@ -58,7 +58,11 @@
                 <p class="promo-text">Founder & Chief architect at Pacific</p>
             </div>
 
-            <img class="promo-image" src="./images/about-bg.jpg" alt="Gordon Lewes" width="563">
+            <picture>
+                <source srcset="./images/about-bg-mobile.jpg 1x, ./images/about-bg-mobile@2x.jpg 2x" media="(max-width: 1000px)" />
+                <source srcset="./images/about-bg.jpg" />
+                <img class="promo-image" src="./images/about-bg-mobile.jpg" srcset="./images/about-bg-mobile.jpg 1x, ./images/about-bg-mobile@2x.jpg 2x" alt="Gordon Lewes" width="563">
+            </picture>
         </section>
 
         <div class="about-wrapper">

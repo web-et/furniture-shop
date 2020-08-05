@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop | Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal" aria-label="Sign Up Modal" role="dialog">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">Close modal</button>
+
+            <h1 class="modal__title">Sign Up</h1>
+
+            <form class="modal__form" action="http://httpbin.org/post" method="POST">
+                <label class="modal__label" for="login">Login</label>
+                <input id="login" class="modal__input" type="email" name="login" placeholder="Email">
+
+                <label class="modal__label" for="password">Password</label>
+                <input id="password" class="modal__input" type="password" name="password" placeholder="Password">
+
+                <button class="modal__button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <header class="header">
+        <button class="header-burger">Открыть меню</button>
+
+        <nav class="header-nav">
+            <div class="header-nav-wrapper">
+                <a href="#" class="logo">Pacific</a>
+
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Nav</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Products</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Rooms</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Ideas</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Offers</a></li>
+                </ul>
+            </div>
+
+            <ul class="nav-list nav-list-right">
+                <li class="nav-list-item js-sign-modal"><a href="#" class="nav-list-link">Sign in</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Cart</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main shop">
+        <nav class="shop-nav">
+            <h1 class="shop-nav__title">Shop</h1>
+            <ul class="shop-nav__list">
+                <li class="shop-nav__list-item dropdown">
+                    <button class="dropdown__button">Sort By</button>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__menu-item">Popular</li>
+                        <li class="dropdown__menu-item">Cheeper</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="shop-goods" aria-label="goods">
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/ysette.png" srcset="images/ysette.png 1x, images/ysette@2x.png 2x" alt="Ysette">
+                </div>
+                <h2 class="shop-goods__item-title">Ysette</h2>
+                <p class="shop-goods__item-text">Ceiling Light</p>
+                <span class="shop-goods__item-price">$129</span>
+            </a>
+
+            <a href="#" class="shop-goods__item shop-goods__item--sale">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/porgei.png" srcset="images/porgei.png 1x, images/porgei@2x.png 2x" alt="Porgei">
+                </div>
+                <h2 class="shop-goods__item-title">Porgei</h2>
+                <p class="shop-goods__item-text">Ceramic Bathtub</p>
+                <span class="shop-goods__item-price">$1,695</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/monsage.png" srcset="images/monsage.png 1x, images/monsage@2x.png 2x" alt="Monsage">
+                </div>
+                <h2 class="shop-goods__item-title">Monsage</h2>
+                <p class="shop-goods__item-text">Sofa</p>
+                <span class="shop-goods__item-price">$647</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/lomme.png" srcset="images/lomme.png 1x, images/lomme@2x.png 2x" alt="Lomme">
+                </div>
+                <h2 class="shop-goods__item-title">Lomme</h2>
+                <p class="shop-goods__item-text">Table</p>
+                <span class="shop-goods__item-price">$329</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/hloga.png" srcset="images/hloga.png 1x, images/hloga@2x.png 2x" alt="Hloga">
+                </div>
+                <h2 class="shop-goods__item-title">Hloga</h2>
+                <p class="shop-goods__item-text">Ceiling Light</p>
+                <span class="shop-goods__item-price">$129</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/derpe.png" srcset="images/derpe.png 1x, images/derpe@2x.png 2x" alt="Derpe">
+                </div>
+                <h2 class="shop-goods__item-title">Derpe</h2>
+                <p class="shop-goods__item-text">Deco Chair</p>
+                <span class="shop-goods__item-price">$189</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/olerre.png" srcset="images/olerre.png 1x, images/olerre@2x.png 2x" alt="Olerre">
+                </div>
+                <h2 class="shop-goods__item-title">Olerre</h2>
+                <p class="shop-goods__item-text">Minimal Lamp</p>
+                <span class="shop-goods__item-price">$345</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/gredde.png" srcset="images/gredde.png 1x, images/gredde@2x.png 2x" alt="Gredde">
+                </div>
+                <h2 class="shop-goods__item-title">Gredde</h2>
+                <p class="shop-goods__item-text">Ceiling Light</p>
+                <span class="shop-goods__item-price">$549</span>
+            </a>
+
+            <a href="#" class="shop-goods__item shop-goods__item--sale">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/passer.png" srcset="images/passer.png 1x, images/passer@2x.png 2x" alt="Passer">
+                </div>
+                <h2 class="shop-goods__item-title">Passer</h2>
+                <p class="shop-goods__item-text">Basket</p>
+                <span class="shop-goods__item-price">$89</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/june.png" srcset="images/june.png 1x, images/june@2x.png 2x" alt="June">
+                </div>
+                <h2 class="shop-goods__item-title">June</h2>
+                <p class="shop-goods__item-text">Wall Clock</p>
+                <span class="shop-goods__item-price">$475</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/kjoe.png" srcset="images/kjoe.png 1x, images/kjoe@2x.png 2x" alt="Kjoe">
+                </div>
+                <h2 class="shop-goods__item-title">Kjoe</h2>
+                <p class="shop-goods__item-text">Leather Sofa Chair</p>
+                <span class="shop-goods__item-price">$865</span>
+            </a>
+
+            <a href="#" class="shop-goods__item">
+                <div class="shop-goods__item-image-container">
+                    <img class="shop-goods__item-image" src="images/woert.png" srcset="images/woert.png 1x, images/woert@2x.png 2x" alt="Woert">
+                </div>
+                <h2 class="shop-goods__item-title">Woert</h2>
+                <p class="shop-goods__item-text">Ceramic Wood Pot</p>
+                <span class="shop-goods__item-price">$125</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1 class="title footer-title">Let's design the<br>place you always imagined.</h1>
+
+        <p class="footer-blockquote"><em>Beautiful lighting collection to create a lively environment for your living spaces.</em></p>
+
+        <section class="footer-contacts">
+            <div class="footer-contacts-column-1">
+                <div class="footer-contacts-item">
+                    <h2 class="footer-contacts-item-title">Talk with us</h2>
+                    <p class="footer-contacts-item-subtitle">Phone</p>
+                    <a class="footer-contacts-item-text" href="tel:440000000">+44 000 0000</a>
+                </div>
+
+                <div class="footer-contacts-item">
+                    <h2 class="footer-contacts-item-title">Write us</h2>
+                    <p class="footer-contacts-item-subtitle">Email</p>
+                    <a class="footer-contacts-item-text" href="mailto:info@pacificbuilds.arch">info@pacificbuilds.arch</a>
+                </div>
+            </div>
+
+            <div class="footer-contacts-column-2">
+                <address class="footer-address">
+                    Pacific Designs O21,<br>
+                    54th and 5th, Los Angeles<br>
+                    California, 785486
+                </address>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

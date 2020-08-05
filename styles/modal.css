@@ -35,6 +35,20 @@
     z-index: 1;
 }
 
+.modal--open .modal__content {
+    animation: show 0.3s;
+}
+
+@keyframes show {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 .modal__close {
     position: absolute;
     right: 0;

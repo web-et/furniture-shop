@@ -1,0 +1,5 @@
+.shop {
+    padding-top: 35px;
+    border-top: 2px solid var(--black);
+    box-sizing: border-box;
+}
