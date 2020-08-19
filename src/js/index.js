@@ -1,3 +1,8 @@
+// import Swiper from 'swiper';
+// import 'swiper/swiper-bundle.css';
+
+// const swiper = new Swiper();
+
 // Открытие/закрытие меню
 // 1. Найти элемент кнопки и найти меню, которое будем скрывать
 let burgerElement = document.querySelector('.header-burger');
