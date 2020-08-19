@@ -1,0 +1,22 @@
+{
+  "name": "furniture-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:web-et/furniture-shop.git",
+  "author": "web-et <web-et@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
+  "dependencies": {
+    "swiper": "^6.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}
