@@ -5,51 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Shop</title>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,600i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div class="modal" role="dialog" aria-label="Sign Up Modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__content">
-            <button class="modal__close">Close button</button>
-
-            <h1 class="modal__title">Sign Up</h1>
-
-            <form class="modal__form" action="http://httpbin.org/post" method="POST">
-                <label class="modal__label" for="login">Login</label>
-                <input id="login" class="modal__input" type="email" name="login" placeholder="Email">
-
-                <label class="modal__label" for="password">Password</label>
-                <input id="password" class="modal__input" type="password" name="password" placeholder="Password">
-
-                <button class="modal__button">Sign Up</button>
-            </form>
-        </div>
-    </div>
-
-    <header class="header">
-        <button class="header-burger">Открыть меню</button>
-
-        <nav class="header-nav">
-            <div class="header-nav-wrapper">
-                <a href="#" class="logo">Pacific</a>
-
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Nav</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Products</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Rooms</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Ideas</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Offers</a></li>
-                </ul>
-            </div>
-
-            <ul class="nav-list nav-list-right">
-                <li class="nav-list-item"><button class="nav-list-link nav-list-button js-sign-modal">Sign in</button></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Cart</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Search</a></li>
-            </ul>
-        </nav>
-    </header>
+    @@include('html-templates/sign-in-modal.html')
+    @@include('html-templates/header.html')
 
     <main class="main">
         <section class="promo">
@@ -167,37 +127,8 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <h1 class="title footer-title">Let's design the<br>place you always imagined.</h1>
-
-        <p class="footer-blockquote"><em>Beautiful lighting collection to create a lively environment for your living spaces.</em></p>
-
-        <section class="footer-contacts">
-            <div class="footer-contacts-column-1">
-                <div class="footer-contacts-item">
-                    <h2 class="footer-contacts-item-title">Talk with us</h2>
-                    <p class="footer-contacts-item-subtitle">Phone</p>
-                    <a class="footer-contacts-item-text" href="tel:440000000">+44 000 0000</a>
-                </div>
-
-                <div class="footer-contacts-item">
-                    <h2 class="footer-contacts-item-title">Write us</h2>
-                    <p class="footer-contacts-item-subtitle">Email</p>
-                    <a class="footer-contacts-item-text" href="mailto:info@pacificbuilds.arch">info@pacificbuilds.arch</a>
-                </div>
-            </div>
-
-            <div class="footer-contacts-column-2">
-                <address class="footer-address">
-                    Pacific Designs O21,<br>
-                    54th and 5th, Los Angeles<br>
-                    California, 785486
-                </address>
-            </div>
-        </section>
-    </footer>
+    @@include('html-templates/footer.html')
 
     <script src="js/index.js"></script>
-    <script src="js/modal.js"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
-@import './styles/global.css';
-@import './styles/modal.css';
-@import './styles/title.css';
-@import './styles/shop.css';
-@import './styles/shop-nav.css';
-@import './styles/shop-goods.css';
-@import './styles/dropdown.css';
+@import './global.css';
+@import './modal.css';
+@import './title.css';
+@import './shop.css';
+@import './shop-nav.css';
+@import './shop-goods.css';
+@import './dropdown.css';
 
 .header {
     display: flex;
@@ -72,7 +72,7 @@
     width: 18px;
     height: 12px;
     border: 0;
-    background: url(./images/burger.svg) no-repeat center/cover;
+    background: url(../images/burger.svg) no-repeat center/cover;
     font-size: 0;
     padding: 0;
 }
@@ -280,7 +280,7 @@
     display: block;
     width: 100%;
     height: 505px;
-    background: url(./images/offers-promo.png) no-repeat center/cover;
+    background: url(../images/offers-promo.png) no-repeat center/cover;
 }
 
 .offers-promo-title {

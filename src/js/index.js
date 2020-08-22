@@ -3,6 +3,9 @@
 
 // const swiper = new Swiper();
 
+import './modal';
+import './modernizr-custom';
+
 // Открытие/закрытие меню
 // 1. Найти элемент кнопки и найти меню, которое будем скрывать
 let burgerElement = document.querySelector('.header-burger');

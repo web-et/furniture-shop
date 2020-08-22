@@ -6,30 +6,11 @@
     <title>Offers | Furniture Shop</title>
 
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,600i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="header-nav">
-            <div class="header-nav-wrapper">
-                <a href="#" class="logo">Pacific</a>
-
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Nav</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Products</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Rooms</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Ideas</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Offers</a></li>
-                </ul>
-            </div>
-
-            <ul class="nav-list nav-list-right">
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Sign in</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Cart</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Search</a></li>
-            </ul>
-        </nav>
-    </header>
+    @@include('html-templates/sign-in-modal.html')
+    @@include('html-templates/header.html')
 
     <main class="main">
         <section class="offers-promo">
@@ -178,34 +159,8 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <h1 class="title footer-title">Let's design the<br>place you always imagined.</h1>
+    @@include('html-templates/footer.html')
 
-        <p class="footer-blockquote"><em>Beautiful lighting collection to create a lively environment for your living spaces.</em></p>
-
-        <section class="footer-contacts">
-            <div class="footer-contacts-column-1">
-                <div class="footer-contacts-item">
-                    <h2 class="footer-contacts-item-title">Talk with us</h2>
-                    <p class="footer-contacts-item-subtitle">Phone</p>
-                    <a class="footer-contacts-item-text" href="tel:440000000">+44 000 0000</a>
-                </div>
-
-                <div class="footer-contacts-item">
-                    <h2 class="footer-contacts-item-title">Write us</h2>
-                    <p class="footer-contacts-item-subtitle">Email</p>
-                    <a class="footer-contacts-item-text" href="mailto:info@pacificbuilds.arch">info@pacificbuilds.arch</a>
-                </div>
-            </div>
-
-            <div class="footer-contacts-column-2">
-                <address class="footer-address">
-                    Pacific Designs O21,<br>
-                    54th and 5th, Los Angeles<br>
-                    California, 785486
-                </address>
-            </div>
-        </section>
-    </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

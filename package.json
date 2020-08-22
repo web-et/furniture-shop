@@ -6,17 +6,28 @@
   "author": "web-et <web-et@yandex.ru>",
   "license": "MIT",
   "scripts": {
-    "build": "gulp"
+    "webp": "gulp webp",
+    "start": "gulp watch",
+    "build": "gulp build",
+    "serve-build": "gulp check"
   },
   "dependencies": {
     "swiper": "^6.1.2"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-uglify-es": "^2.0.0"
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss-import": "^12.0.1",
+    "rollup": "^2.26.5"
   }
 }
