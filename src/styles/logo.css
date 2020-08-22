@@ -1,0 +1,16 @@
+.logo {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Crimson Text', serif;
+}
+
+@media (min-width: 1000px) {
+    .logo {
+        margin-bottom: 0;
+        margin-right: 118px;
+    }
+}

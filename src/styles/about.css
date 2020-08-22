@@ -1,0 +1,50 @@
+.about__text {
+    margin-bottom: 50px;
+    margin-bottom: 16px;
+}
+
+.about__blockquote {
+    margin: 0;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: var(--font-secondary);
+}
+
+.about__title {
+    margin: 13px 0 16px;
+}
+
+.about__video {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1000px) {
+    .about {
+        padding-left: 12%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .about__column-1 {
+        width: 602px;
+        width: 50%;
+        margin-right: 50px;
+    }
+    
+    .about__column-2 {
+        width: 556px;
+        width: 50%;
+    }
+    
+    .about__title {
+        margin: 128px 0 54px;
+    }
+    
+    .about__video {
+        margin-top: 55px;
+        margin-bottom: 49px;
+    }
+}

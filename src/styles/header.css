@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.header__nav {
+    width: 100%;
+}
+
+.header__burger {
+    margin-top: 10px;
+    margin-right: 13px;
+    width: 18px;
+    height: 12px;
+    border: 0;
+    background: url(../images/burger.svg) no-repeat center/cover;
+    font-size: 0;
+    padding: 0;
+}
+
+@media (min-width: 1000px) {
+    .header {
+        margin-bottom: 102px;
+    }
+    
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header__nav-wrapper {
+        display: flex;
+    }
+    
+    .header__burger {
+        display: none;
+    }
+}

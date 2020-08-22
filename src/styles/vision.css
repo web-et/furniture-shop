@@ -1,0 +1,9 @@
+.vision__title {
+    margin: 50px 0 16px;
+}
+
+@media (min-width: 1000px) {
+    .vision__title {
+        margin: 97px 0 50px;
+    }
+}
