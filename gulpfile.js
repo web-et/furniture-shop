@@ -11,6 +11,7 @@ const browserSync = require('browser-sync').create();
 const webp = require('gulp-webp');
 const fileinclude = require('gulp-file-include');
 const rollup = require('rollup');
+const rollupResolve = require('@rollup/plugin-node-resolve').default;
 
 function removeFolder() {
     return src('dist', { read: false, allowEmpty: true })
@@ -44,6 +45,7 @@ function minifyImages() {
 function javascript() {
     return rollup.rollup({
         input: './src/js/index.js',
+        plugins: [rollupResolve()],
     }).then(bundle => {
         return bundle.write({
             file: './dist/js/index.js',
@@ -89,6 +91,10 @@ function watchHTML() {
     return watch('src/*.html', html);
 }
 
+function watchImages() {
+    return watch('src/images/*', copyImages);
+}
+
 function runServer() {
     return browserSync.init({
         server: 'dist',
@@ -116,6 +122,7 @@ function watchChanges() {
         watchCSS,
         watchJS,
         watchHTML,
+        watchImages,
         runServer
     );
 }

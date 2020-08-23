@@ -1,0 +1,29 @@
+.similiar-products__title {
+    margin: 0;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--black);
+}
+
+.similiar-products__slider {
+    width: 100%;
+    height: 130px;
+    padding: 0 90px;
+}
+
+.similiar-products__slider .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1000px) {
+    .similiar-products {
+        display: flex;
+        align-items: center;
+    }
+}
