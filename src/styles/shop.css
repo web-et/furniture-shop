@@ -3,3 +3,10 @@
     border-top: 2px solid var(--black);
     box-sizing: border-box;
 }
+
+.shop__button-more {
+    margin: 0 auto;
+    display: block;
+    transform: translateY(50%);
+    background-color: var(--white);
+}

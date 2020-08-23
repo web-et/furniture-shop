@@ -18,126 +18,20 @@
                 <li class="shop-nav__list-item dropdown">
                     <button class="dropdown__button">Sort By</button>
                     <ul class="dropdown__menu">
-                        <li class="dropdown__menu-item">Popular</li>
-                        <li class="dropdown__menu-item">Cheeper</li>
+                        <li class="dropdown__menu-item">
+                            <button class="dropdown__menu-button" data-mode="popular">Popular</button>
+                        </li>
+                        <li class="dropdown__menu-item">
+                            <button class="dropdown__menu-button" data-mode="cheeper">Cheeper</button>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </nav>
 
-        <section class="shop-goods" aria-label="goods">
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <picture>
-                        <source srcset="images/ysette.webp 1x, images/ysette@2x.webp 2x" type="image/webp" />
-                        <source srcset="images/ysette.png 1x, images/ysette@2x.png 2x" type="image/png" />
-                        <img class="shop-goods__item-image" src="images/ysette.png" srcset="images/ysette.png 1x, images/ysette@2x.png 2x" alt="Ysette">
-                    </picture>
-                </div>
-                <h2 class="shop-goods__item-title">Ysette</h2>
-                <p class="shop-goods__item-text">Ceiling Light</p>
-                <span class="shop-goods__item-price">$129</span>
-            </a>
+        <section class="shop-goods" aria-label="goods"></section>
 
-            <a href="/product.html" class="shop-goods__item shop-goods__item--sale">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/porgei.png" srcset="images/porgei.png 1x, images/porgei@2x.png 2x" alt="Porgei">
-                </div>
-                <h2 class="shop-goods__item-title">Porgei</h2>
-                <p class="shop-goods__item-text">Ceramic Bathtub</p>
-                <span class="shop-goods__item-price">$1,695</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/monsage.png" srcset="images/monsage.png 1x, images/monsage@2x.png 2x" alt="Monsage">
-                </div>
-                <h2 class="shop-goods__item-title">Monsage</h2>
-                <p class="shop-goods__item-text">Sofa</p>
-                <span class="shop-goods__item-price">$647</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/lomme.png" srcset="images/lomme.png 1x, images/lomme@2x.png 2x" alt="Lomme">
-                </div>
-                <h2 class="shop-goods__item-title">Lomme</h2>
-                <p class="shop-goods__item-text">Table</p>
-                <span class="shop-goods__item-price">$329</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/hloga.png" srcset="images/hloga.png 1x, images/hloga@2x.png 2x" alt="Hloga">
-                </div>
-                <h2 class="shop-goods__item-title">Hloga</h2>
-                <p class="shop-goods__item-text">Ceiling Light</p>
-                <span class="shop-goods__item-price">$129</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/derpe.png" srcset="images/derpe.png 1x, images/derpe@2x.png 2x" alt="Derpe">
-                </div>
-                <h2 class="shop-goods__item-title">Derpe</h2>
-                <p class="shop-goods__item-text">Deco Chair</p>
-                <span class="shop-goods__item-price">$189</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/olerre.png" srcset="images/olerre.png 1x, images/olerre@2x.png 2x" alt="Olerre">
-                </div>
-                <h2 class="shop-goods__item-title">Olerre</h2>
-                <p class="shop-goods__item-text">Minimal Lamp</p>
-                <span class="shop-goods__item-price">$345</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/gredde.png" srcset="images/gredde.png 1x, images/gredde@2x.png 2x" alt="Gredde">
-                </div>
-                <h2 class="shop-goods__item-title">Gredde</h2>
-                <p class="shop-goods__item-text">Ceiling Light</p>
-                <span class="shop-goods__item-price">$549</span>
-            </a>
-
-            <a href="#" class="shop-goods__item shop-goods__item--sale">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/passer.png" srcset="images/passer.png 1x, images/passer@2x.png 2x" alt="Passer">
-                </div>
-                <h2 class="shop-goods__item-title">Passer</h2>
-                <p class="shop-goods__item-text">Basket</p>
-                <span class="shop-goods__item-price">$89</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/june.png" srcset="images/june.png 1x, images/june@2x.png 2x" alt="June">
-                </div>
-                <h2 class="shop-goods__item-title">June</h2>
-                <p class="shop-goods__item-text">Wall Clock</p>
-                <span class="shop-goods__item-price">$475</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/kjoe.png" srcset="images/kjoe.png 1x, images/kjoe@2x.png 2x" alt="Kjoe">
-                </div>
-                <h2 class="shop-goods__item-title">Kjoe</h2>
-                <p class="shop-goods__item-text">Leather Sofa Chair</p>
-                <span class="shop-goods__item-price">$865</span>
-            </a>
-
-            <a href="/product.html" class="shop-goods__item">
-                <div class="shop-goods__item-image-container">
-                    <img class="shop-goods__item-image" src="images/woert.png" srcset="images/woert.png 1x, images/woert@2x.png 2x" alt="Woert">
-                </div>
-                <h2 class="shop-goods__item-title">Woert</h2>
-                <p class="shop-goods__item-text">Ceramic Wood Pot</p>
-                <span class="shop-goods__item-price">$125</span>
-            </a>
-        </section>
+        <button class="button shop__button-more">See more</button>
     </main>
 
     @@include('html-templates/footer.html')
