@@ -1,0 +1,13 @@
+.text-big {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+@media (min-width: 1000px) {
+    .text-big {
+        font-size: 26px;
+        line-height: 31px;
+    }
+}

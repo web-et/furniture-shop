@@ -6,170 +6,151 @@
     <title>Offers | Furniture Shop</title>
 
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,600i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="header-nav">
-            <div class="header-nav-wrapper">
-                <a href="#" class="logo">Pacific</a>
-
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Nav</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Products</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Rooms</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Ideas</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Offers</a></li>
-                </ul>
-            </div>
-
-            <ul class="nav-list nav-list-right">
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Sign in</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Cart</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Search</a></li>
-            </ul>
-        </nav>
-    </header>
+    @@include('html-templates/sign-in-modal.html')
+    @@include('html-templates/header.html')
 
     <main class="main">
         <section class="offers-promo">
-            <h1 class="title offers-promo-title">We design living spaces that brings tranquility and comfort.</h1>
-            <p class="text-italic offers-promo-text">Our job is to give you the best comfort there is to offer</p>
+            <h1 class="title offers-promo__title">We design living spaces that brings tranquility and comfort.</h1>
+            <p class="text-italic offers-promo__text">Our job is to give you the best comfort there is to offer</p>
         </section>
 
         <section class="collections">
-            <h2 class="title collections-title">Collections</h2>
+            <h2 class="title collections__title">Collections</h2>
 
             <section class="lighting-grid">
-                <div class="lighting-grid-item">
+                <div class="lighting-grid__item">
                     <div>
-                        <h3 class="collections-subtitle">Lighting</h3>
-                        <p class="collections-text">Beautiful lighting collection to create a lively environment for your living spaces.</p>
-                        <button class="button lighting-button">See collection</button>
+                        <h3 class="collections__subtitle">Lighting</h3>
+                        <p class="collections__text">Beautiful lighting collection to create a lively environment for your living spaces.</p>
+                        <button class="button lighting-grid__button">See collection</button>
                     </div>
 
                     <div class="goods-item">
                         <img src="./images/lighting-olerre.png" alt="Olerre">
-                        <table class="goods-table goods-table-absolute">
+                        <table class="goods-table goods-table__absolute">
                             <tbody>
-                                <tr class="goods-table-tr goods-table-header">
+                                <tr class="goods-table__tr goods-table__header">
                                     <td class="visually-hidden">Name</td>
-                                    <td class="goods-table-title">Olerre</td>
+                                    <td class="goods-table__title">Olerre</td>
                                 </tr>
-                                <tr class="goods-table-tr">
-                                    <td class="goods-table-title">Product size</td>
-                                    <td class="goods-table-text">60x38x22</td>
+                                <tr class="goods-table__tr">
+                                    <td class="goods-table__title">Product size</td>
+                                    <td class="goods-table__text">60x38x22</td>
                                 </tr>
-                                <tr class="goods-table-tr">
-                                    <td class="goods-table-title">Available in</td>
-                                    <td class="goods-table-text">Black, White</td>
+                                <tr class="goods-table__tr">
+                                    <td class="goods-table__title">Available in</td>
+                                    <td class="goods-table__text">Black, White</td>
                                 </tr>
-                                <tr class="goods-table-tr">
-                                    <td class="goods-table-title">Price</td>
-                                    <td class="goods-table-text">$345</td>
+                                <tr class="goods-table__tr">
+                                    <td class="goods-table__title">Price</td>
+                                    <td class="goods-table__text">$345</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <div class="lighting-grid-item goods-item">
+                <div class="lighting-grid__item goods-item">
                     <img src="./images/lighting-hammpar.png" alt="Hammpar">
-                    <table class="goods-table goods-table-absolute goods-table-absolute-item-2">
+                    <table class="goods-table goods-table__absolute goods-table__absolute--item-2">
                         <tbody>
-                            <tr class="goods-table-tr goods-table-header">
+                            <tr class="goods-table__tr goods-table__header">
                                 <td class="visually-hidden">Name</td>
-                                <td class="goods-table-title">Hammpar</td>
+                                <td class="goods-table__title">Hammpar</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Product size</td>
-                                <td class="goods-table-text">60x38x22</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Product size</td>
+                                <td class="goods-table__text">60x38x22</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Available in</td>
-                                <td class="goods-table-text">Steel, Blacl</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Available in</td>
+                                <td class="goods-table__text">Steel, Blacl</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Price</td>
-                                <td class="goods-table-text">$449</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Price</td>
+                                <td class="goods-table__text">$449</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="lighting-grid-item goods-item">
-                    <div class="goods-image-wrapper">
+                <div class="lighting-grid__item goods-item">
+                    <div class="goods-item__image-wrapper">
                         <img src="./images/lighting-hloga.png" alt="Hloga">
                     </div>
                     <table class="goods-table">
                         <tbody>
-                            <tr class="goods-table-tr goods-table-header">
+                            <tr class="goods-table__tr goods-table__header">
                                 <td class="visually-hidden">Name</td>
-                                <td class="goods-table-title">Hloga</td>
+                                <td class="goods-table__title">Hloga</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Product size</td>
-                                <td class="goods-table-text">25x17x22</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Product size</td>
+                                <td class="goods-table__text">25x17x22</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Available in</td>
-                                <td class="goods-table-text">Black, Gold</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Available in</td>
+                                <td class="goods-table__text">Black, Gold</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Price</td>
-                                <td class="goods-table-text">$129</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Price</td>
+                                <td class="goods-table__text">$129</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="lighting-grid-item goods-item">
-                    <div class="goods-image-wrapper">
+                <div class="lighting-grid__item goods-item">
+                    <div class="goods-item__image-wrapper">
                         <img src="./images/lighting-fluerre.png" alt="Fluerre">
                     </div>
                     <table class="goods-table">
                         <tbody>
-                            <tr class="goods-table-tr goods-table-header">
+                            <tr class="goods-table__tr goods-table__header">
                                 <td class="visually-hidden">Name</td>
-                                <td class="goods-table-title">Fluerre</td>
+                                <td class="goods-table__title">Fluerre</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Product size</td>
-                                <td class="goods-table-text">21x38x22</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Product size</td>
+                                <td class="goods-table__text">21x38x22</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Available in</td>
-                                <td class="goods-table-text">Light, Dark</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Available in</td>
+                                <td class="goods-table__text">Light, Dark</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Price</td>
-                                <td class="goods-table-text">$125</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Price</td>
+                                <td class="goods-table__text">$125</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="lighting-grid-item goods-item">
-                    <div class="goods-image-wrapper">
+                <div class="lighting-grid__item goods-item">
+                    <div class="goods-item__image-wrapper">
                         <img src="./images/lighting-gredde.png" alt="Gredde">
                     </div>
                     <table class="goods-table">
                         <tbody>
-                            <tr class="goods-table-tr goods-table-header">
+                            <tr class="goods-table__tr goods-table__header">
                                 <td class="visually-hidden">Name</td>
-                                <td class="goods-table-title">Gredde</td>
+                                <td class="goods-table__title">Gredde</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Product size</td>
-                                <td class="goods-table-text">22x37x22</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Product size</td>
+                                <td class="goods-table__text">22x37x22</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Available in</td>
-                                <td class="goods-table-text">Black, Steel</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Available in</td>
+                                <td class="goods-table__text">Black, Steel</td>
                             </tr>
-                            <tr class="goods-table-tr">
-                                <td class="goods-table-title">Price</td>
-                                <td class="goods-table-text">$239</td>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Price</td>
+                                <td class="goods-table__text">$239</td>
                             </tr>
                         </tbody>
                     </table>
@@ -178,34 +159,8 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <h1 class="title footer-title">Let's design the<br>place you always imagined.</h1>
+    @@include('html-templates/footer.html')
 
-        <p class="footer-blockquote"><em>Beautiful lighting collection to create a lively environment for your living spaces.</em></p>
-
-        <section class="footer-contacts">
-            <div class="footer-contacts-column-1">
-                <div class="footer-contacts-item">
-                    <h2 class="footer-contacts-item-title">Talk with us</h2>
-                    <p class="footer-contacts-item-subtitle">Phone</p>
-                    <a class="footer-contacts-item-text" href="tel:440000000">+44 000 0000</a>
-                </div>
-
-                <div class="footer-contacts-item">
-                    <h2 class="footer-contacts-item-title">Write us</h2>
-                    <p class="footer-contacts-item-subtitle">Email</p>
-                    <a class="footer-contacts-item-text" href="mailto:info@pacificbuilds.arch">info@pacificbuilds.arch</a>
-                </div>
-            </div>
-
-            <div class="footer-contacts-column-2">
-                <address class="footer-address">
-                    Pacific Designs O21,<br>
-                    54th and 5th, Los Angeles<br>
-                    California, 785486
-                </address>
-            </div>
-        </section>
-    </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

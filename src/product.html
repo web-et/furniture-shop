@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    @@include('html-templates/sign-in-modal.html')
+    @@include('html-templates/header.html')
+
+    <main class="main">
+        <section class="product">
+            <picture>
+                <source srcset="images/product-prosti.webp 1x, images/product-prosti@2x.webp 2x" type="image/webp" />
+                <source srcset="images/product-prosti.png 1x, images/product-prosti@2x.png 2x" type="image/png" />
+                <img class="product__image" src="images/product-prosti.png" srcset="images/product-prosti.png 1x, images/product-prosti@2x.png 2x" alt="Prosti">
+            </picture>
+
+            <div class="product__content">
+                <div class="product__wrapper">
+                    <div class="product__header">
+                        <h1 class="title product__title">Prosti <span class="product__author">by John Bossworth</span></h1>
+                        <p class="title product__price">$345</p>
+                        <button class="button product__button">Add to cart</button>
+                    </div>
+        
+                    <table class="goods-table product__table">
+                        <tbody>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Product size</td>
+                                <td class="goods-table__text">60x138x22</td>
+                            </tr>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Available in</td>
+                                <td class="goods-table__text">Yellow, Grey</td>
+                            </tr>
+                            <tr class="goods-table__tr">
+                                <td class="goods-table__title">Collection</td>
+                                <td class="goods-table__text">2019</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <table class="goods-table product__info">
+                    <tbody class="product__info-body">
+                        <tr class="goods-table__tr product__info-item">
+                            <td class="goods-table__title product__info-item-title">Product information</td>
+                            <td class="goods-table__text product__info-item-text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will you a complete account of the.</td>
+                        </tr>
+                        <tr class="goods-table__tr product__info-item">
+                            <td class="goods-table__title product__info-item-title">Materials</td>
+                            <td class="goods-table__text product__info-item-text">Natural Wood, 100% Cotton, Polyutherine Fabric</td>
+                        </tr>
+                        <tr class="goods-table__tr product__info-item product__info-item--colors">
+                            <td class="goods-table__title product__info-item-title">Colors</td>
+                            <td class="goods-table__text product__info-item-text">
+                                <ul class="product__info-colors">
+                                    <li class="product__info-color product__info-color--yellow">Yellow</li>
+                                    <li class="product__info-color product__info-color--grey">Grey</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="similiar-products">
+            <h2 class="similiar-products__title">You'll also like</h2>
+            <div class="slider swiper-container similiar-products__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-1.webp 1x, images/similiar-product-1@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-1.png 1x, images/similiar-product-1@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-1.png" srcset="images/similiar-product-1.png 1x, images/similiar-product-1@2x.png 2x" alt="Similiar Product 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-2.webp 1x, images/similiar-product-2@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-2.png 1x, images/similiar-product-2@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-2.png" srcset="images/similiar-product-2.png 1x, images/similiar-product-2@2x.png 2x" alt="Similiar Product 2">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-3.webp 1x, images/similiar-product-3@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-3.png 1x, images/similiar-product-3@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-3.png" srcset="images/similiar-product-3.png 1x, images/similiar-product-3@2x.png 2x" alt="Similiar Product 3">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-4.webp 1x, images/similiar-product-4@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-4.png 1x, images/similiar-product-4@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-4.png" srcset="images/similiar-product-4.png 1x, images/similiar-product-4@2x.png 2x" alt="Similiar Product 4">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-5.webp 1x, images/similiar-product-5@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-5.png 1x, images/similiar-product-5@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-5.png" srcset="images/similiar-product-5.png 1x, images/similiar-product-5@2x.png 2x" alt="Similiar Product 5">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-6.webp 1x, images/similiar-product-6@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-6.png 1x, images/similiar-product-6@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-6.png" srcset="images/similiar-product-6.png 1x, images/similiar-product-6@2x.png 2x" alt="Similiar Product 6">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-1.webp 1x, images/similiar-product-1@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-1.png 1x, images/similiar-product-1@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-1.png" srcset="images/similiar-product-1.png 1x, images/similiar-product-1@2x.png 2x" alt="Similiar Product 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-2.webp 1x, images/similiar-product-2@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-2.png 1x, images/similiar-product-2@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-2.png" srcset="images/similiar-product-2.png 1x, images/similiar-product-2@2x.png 2x" alt="Similiar Product 2">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/similiar-product-3.webp 1x, images/similiar-product-3@2x.webp 2x" type="image/webp" />
+                            <source srcset="images/similiar-product-3.png 1x, images/similiar-product-3@2x.png 2x" type="image/png" />
+                            <img class="product__image" src="images/similiar-product-3.png" srcset="images/similiar-product-3.png 1x, images/similiar-product-3@2x.png 2x" alt="Similiar Product 3">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html-templates/footer.html')
+
+    <script src="js/index.js"></script>
+</body>
+</html>

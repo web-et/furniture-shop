@@ -1,0 +1,19 @@
+.offers-promo {
+    margin-bottom: 28px;
+}
+
+.offers-promo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 505px;
+    background: url(../images/offers-promo.png) no-repeat center/cover;
+}
+
+.offers-promo__title {
+    margin-bottom: 28px;
+}
+
+.offers-promo__text {
+    margin-bottom: 105px;
+}

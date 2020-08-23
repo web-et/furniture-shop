@@ -1,0 +1,16 @@
+.goods-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.goods-item__image-wrapper {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.goods-item__image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}

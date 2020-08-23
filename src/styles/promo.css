@@ -1,0 +1,44 @@
+.promo {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+
+.promo__content {
+    position: absolute;
+    bottom: 31px;
+    right: 10px;
+    color: var(--white)
+}
+
+.promo__title {
+    margin: 0 0 3px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.promo__text {
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 13px;
+}
+
+.promo__image {
+    width: auto;
+    height: 40vh;
+}
+
+@media (min-width: 1000px) {
+    .promo {
+        margin-bottom: 73px;
+    }
+
+    .promo__content {
+        display: none;
+    }
+    
+    .promo__image {
+        width: 100%;
+        height: auto;
+    }
+}

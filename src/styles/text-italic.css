@@ -1,0 +1,8 @@
+.text-italic {
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: italic;
+    color: var(--black);
+    font-family: var(--font-secondary);
+}
