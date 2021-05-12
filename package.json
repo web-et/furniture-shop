@@ -9,7 +9,7 @@
     "build": "gulp"
   },
   "dependencies": {
-    "swiper": "^6.1.2"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
